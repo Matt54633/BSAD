@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Application Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>DKW Resiliency Management System</h1>
+    </div>
+
+    <!--Application Team Page-->
+    <div id="navbar">
+        <ul id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Application</a></li>
+            <li><a>Resilience</a></li>
+            <li><a>Operations</a></li>
+            <li style="float:right"><a>Logout</a></li>
+            <li style="float:right"><a href="help.html">Help</a></li>
+        </ul>
+    </div>
+
+    <div id="reportsPopUp" class="popup">
+        <h2>Opening search and reporting functionality in Excel.</h2>
+        <h3 onclick="closeReportPopUp()">X</h3>
+    </div>
+
+    <div id="menu">
+        <h1>Application Team</h1>
+        <ul id="menuItems">
+            <li><a href="application-management.html">Application Management/Creation</a></li>
+            <li onclick="displayReportPopUp()"><a>Generate Reports</a></li>
+            <li>
+                <a href="material-changes.html">
+                    <span>Manage Alerts</span>
+                    <span class="notifcation">3</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src=" indexScript.js "></script>
+
+</body>
+
+</html>

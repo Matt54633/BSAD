@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #0682FA;
+}
+
+
+/* Header */
+
+#header {
+    color: #ffffff;
+    height: 3%;
+    background-color: #00B9FF;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 35px;
+    padding: 0.4%;
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    width: 100%;
+    height: 5%;
+    left: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    background-color: #CCFCFF;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbarList li {
+    float: left;
+    display: block;
+    background-color: #CCFCFF;
+    padding: 1%;
+    font-size: 120%;
+    text-align: center;
+}
+
+#navbarList li:hover {
+    background-color: #00B9FF;
+}
+
+#navbarList li:active {
+    background-color: #00B9FF;
+}
+
+
+/* Menu */
+
+#menu {
+    color: #ffffff;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu h1 {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#menu p {
+    text-align: center;
+    font-size: 25px;
+}
+
+#menu ol {
+    text-align: center;
+    font-size: 22px;
+}
+
+ol>li {
+    padding-bottom: 2vw;
+}
+
+#menuItems {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#menuItems li {
+    height: 5vw;
+    font-size: 30px;
+    margin-bottom: 3vw;
+    width: 40%;
+    margin-left: 30%;
+    background-color: #00B9FF;
+    display: flex;
+    align-items: center;
+    border-radius: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#menuItems li:hover {
+    background-color: #4bb5bd;
+}
+
+#menuItems a {
+    width: 100%;
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+}
+
+.popupHeader {
+    background-color: #CCFCFF;
+    width: 100%;
+    font-size: 100%;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);
+}
+
+#reportsPopUp {
+    display: none;
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+    position: absolute;
+    background-color: #0682FA;
+    color: black;
+    border: 5px solid black;
+}
+
+#reportsPopUp h2 {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 5%;
+    padding: 0%;
+    font-size: 23px;
+    text-align: center;
+    background-color: #ffffff;
+    line-height: 18vw;
+}
+
+#reportsPopUp h3 {
+    margin-left: 92.5%;
+    font-size: 30px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#titles {
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+    text-align: center;
+}
+
+#titles h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#titles h2 {
+    font-size: 35px;
+}
+
+#table {
+    width: 45%;
+    margin-left: 27.5%;
+}
+
+#table th {
+    width: 15vw;
+    background-color: #ffffff;
+}
+
+#table td {
+    width: 15vw;
+    height: 2vw;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.notifcation {
+    position: relative;
+    top: -40px;
+    right: -75px;
+    padding: 5px 10px;
+    border-radius: 100%;
+    background: red;
+    color: white;
+}
+
+
+/* APP MANAGEMENT PAGE */
+
+#appManagement {
+    margin: auto;
+    position: center;
+}
+
+#appManagement a {
+    background-color: #00B9FF;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 20%;
+    height: 15%;
+    font-size: 130%;
+}
+
+#appManagement a:hover {
+    background-color: #CCFCFF;
+    color: black;
+}
+
+.elementRow {
+    margin: auto;
+    position: center;
+    display: block;
+    background-color: #00B9FF;
+    height: 20%;
+    font-size: 100%;
+    width: 70%;
+    align-items: center;
+    border-radius: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+#searchSelect {
+    margin: 1%;
+    width: 15%;
+    height: 10%;
+}
+
+#searchInput {
+    width: 60%;
+    height: 10%;
+}
+
+#btnEditApp {
+    width: 15%;
+    height: 10%;
+    min-height: 10%;
+}
+
+#btnCreateApp {
+    margin-top: 5%;
+    margin-left: 40%;
+    font-size: 200%;
+    width: 40%;
+    height: 20%;
+}
+
+#rtoPopup {
+    display: none;
+}
+
+#trapPopup {
+    display: none;
+}
+
+#appResults {
+    width: 45%;
+    margin: 2% 0 2% 27.5%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+#appResults th {
+    text-align: left;
+    width: 15vw;
+}
+
+#appResults tr {
+    text-align: left;
+    height: 2vw;
+    background-color: #ffffff;
+}
+
+#appResults th {
+    background-color: #707070;
+}
+
+#appResults tr:hover {
+    cursor: pointer;
+    background-color: #707070;
+}
+
+#btnRTO,
+#btnCreateTrap,
+#btnAttachTrap,
+#btnAssignMembers {
+    margin: 1%;
+    padding: 0.5%, 0, 0.5%, 0;
+}

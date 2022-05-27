@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Application Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>DKW Resiliency Management System</h1>
+    </div>
+
+    <!--Application Team Page-->
+    <div id="navbar">
+        <ul id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Application</a></li>
+            <li><a>Resilience</a></li>
+            <li><a>Operations</a></li>
+            <li style="float:right"><a>Logout</a></li>
+            <li style="float:right"><a href="help.html">Help</a></li>
+        </ul>
+    </div>
+
+    <div id="titles">
+        <h1>Application Team</h1>
+    </div>
+
+
+    <!--Application Management Page-->
+    <div id="appManagement">
+        <div class="elementRow">
+            <select onchange="searchTable()" id="searchSelect">
+                <option value="ID">ID</option>
+                <option value="NAME">Name</option>
+            </select>
+            <input onkeyup="searchTable()" type="text" id="searchInput" placeholder="Search the system..."></input>
+            <a id="btnEditApp">Edit Application</a>
+        </div>
+
+        <div>
+            <table id="appResults">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>A00234</td>
+                    <td>Real-time account & transaction processing</td>
+                </tr>
+                <tr>
+                    <td>A00235</td>
+                    <td>Financial product builder</td>
+                </tr>
+                <tr>
+                    <td>A00236</td>
+                    <td>Customizable interface & product workflow</td>
+
+                </tr>
+                <tr>
+                    <td>A00237</td>
+                    <td>Customer self-service portal & management</td>
+                </tr>
+                <tr>
+                    <td>A00238</td>
+                    <td>Online payment processing & bill pay</td>
+                </tr>
+                <tr>
+                    <td>A00239</td>
+                    <td>Source capture & remote deposit</td>
+                </tr>
+                <tr>
+                    <td>A00240</td>
+                    <td>Customer interaction</td>
+                </tr>
+                <tr>
+                    <td>A00242</td>
+                    <td>Account-holder data & document store</td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <div>
+            <div class="elementRow">
+                <a id="btnRTO">Create/Agree RTO</a>
+                <a id="btnCreateTrap">Create TRAP</a>
+                <a id="btnAttachTrap">Attach/Remove TRAP</a>
+                <a id="btnAssignMembers">Assign Members</a>
+            </div>
+            <a id="btnCreateApp">Create New Application</a>
+        </div>
+    </div>
+
+
+
+    <!--Create/Agree RTO Popup Screen-->
+    <div id="rtoPopup" class="popup">
+        <h2 class="popupHeader">Business Impact Assessment (BIA)</h2>
+        <div class="elementRow">
+            <input type="file" id="biaInput">Attach BIA Here</input>
+            <a id="btnUploadBIA">Upload</a>
+        </div>
+        <h2>Set Recovery Time Objective (RTO)</h2>
+        <div>
+            <div class="elementRow">
+                <label for="hoursInput">Hours</label>
+                <input type="text" id="hoursInput" placeholder="Enter hours..."></input>
+                <a id="btnSetHours">Set</a>
+            </div>
+            <button id="btnAgreeRTO">Agree?</button>
+        </div>
+    </div>
+
+    <!--Create TRAP Popup Screen-->
+    <div id="trapPopup" class="popup">
+        <h2 class="popupHeader">Create TRAP<br/>(Technology Recovery Action Plan)</h2>
+        <div class="elementRow">
+            <input type="file" id="trapInput">Attach TRAP Here</input>
+            <button id="btnUploadTRAP">Upload</button>
+        </div>
+        <button id="btnAssignOwner">Assign Owner</button>
+        <button id="btnApproveTRAP">Approve Trap</button>
+    </div>
+
+    <!--Assign Team Members Popup Screen-->
+
+
+    <!--New Application Popup Screen-->
+
+
+    <script src="appManage.js"></script>
+</body>
+
+</html>
